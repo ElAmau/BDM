@@ -1,0 +1,15 @@
+<h1>Datos de JSON</h1>
+<div *ngIf="articulos!=null; else espera">
+  <table border="1">
+    <tr>
+      <td>login</td><td>Id</td><td>Node_id</td><td>Avatar_url</td>
+    </tr>
+    <tr *ngFor="let art of articulos">
+      <td>{{art.login}}</td>
+      <td>{{art.id}}</td>
+      <td>{{art.node_id}}</td>
+      <td>{{art.avatar_url}}</td>
+    </tr>
+  </table>
+</div>
+<ng-template #espera>Esperando datos...</ng-template>

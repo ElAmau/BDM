@@ -1,0 +1,7 @@
+{
+    "/api/*":{
+        "target":"https://scratchya.com.ar/vue/datos.php",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
